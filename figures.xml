@@ -1,0 +1,39 @@
+<Group>
+
+<Circle>
+<radius>
+	3.0
+	</radius>
+<Area>
+	28.274333882308138
+	</Area>
+<Length>
+	18.84955592153876
+	</Length>
+</Circle>
+
+<Square>
+<side>
+	2.0
+	</side>
+<Area>
+	4.0
+	</Area>
+</Square>
+
+<Triangle>
+<firstSide>
+	4.0
+	</firstSide>
+<secondSide>
+	3.0
+	</secondSide>
+<thirdSide>
+	5.915025281191232
+	</thirdSide>
+<Area>
+	5.455784560954091
+	</Area>
+</Triangle>
+
+</Group>
