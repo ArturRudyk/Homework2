@@ -5,7 +5,7 @@ import java.io.*;
 public class GenerateXML {
 	private FileWriter fileWriter;
 	private String way = "src/homework2figures/figures.xml";
-	public void writeXMLFile(SerializeToXML figure){
+	public void writeXMLFile(SerializeToXML figure) {
 		try {
 			 fileWriter = new FileWriter(way);
 			 fileWriter.write(figure.addXML());
