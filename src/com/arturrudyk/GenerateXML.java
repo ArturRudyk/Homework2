@@ -1,40 +1,31 @@
-package homework2figures;
+package homework2figures.Homework2.src.com.arturrudyk;
 
 import java.io.*;
 
 public class GenerateXML {
-	 FileWriter genXML;
-	
-	
-	
+	private FileWriter fileWriter;
+	private String way = "src/homework2figures/figures.xml";
 	public void writeXMLFile(SerializeToXML figure){
-		
-		try{
-			 genXML = new FileWriter("src/homework2figures/figures.xml");
-			 genXML.write(figure.addXML());
-			 genXML.close();
-		} catch(IOException a){
+		try {
+			 fileWriter = new FileWriter(way);
+			 fileWriter.write(figure.addXML());
+			 fileWriter.close();
+		} catch(IOException a) {
 			System.out.println();
 		}
-		
 	}
 	
-	public static void main(String args[]){
-		
+	public static void main(String args[]) {
 		Circle circle = new Circle(3);
 		Square square = new Square(2);
-		Triangle triangle = new Triangle(4,3,2);
+		Triangle triangle = new Triangle(4, 3, 2);
 		Group group = new Group();
 		
 		group.addElement(circle);
 		group.addElement(square);
 		group.addElement(triangle);
 		
-		GenerateXML gXML = new GenerateXML(); 
-		gXML.writeXMLFile(group);
-		
-
-		
+		GenerateXML generateXML = new GenerateXML(); 
+		generateXML.writeXMLFile(group);
 	}
-
 }
